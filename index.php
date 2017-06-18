@@ -6,14 +6,6 @@ $postData = array(
     'login' => 'ahgryd',
     'password' => 'jadilahlegenda'
 );
-$postData2 = array(
-    'fadddate' => '$date',
-    'fstatusorgfree' => '22',
-    'fstatuscomfree' => '22',
-    'fstatususfree' => '22',
-    'fstatusinfofree' =>'22',
-    'fstatususfree' => '22'
-);
 
 curl_setopt_array($ch, array(
     CURLOPT_URL => 'https://member.expireddomains.net/login/',
@@ -38,7 +30,6 @@ curl_setopt_array($ch, array(
 ));
 
 
-//curl_setopt($ch, CURLOPT_URL, 'https://member.expireddomains.net/domains/expiredcom/');
 $content = curl_exec($ch);
 echo $content;
 //echo $output;
